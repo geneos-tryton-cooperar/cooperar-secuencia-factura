@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<data>
+    <xpath expr="/form/label[@id='day']" position="after">
+        <label string="Id Empresa:" id="label_idempresa"/>
+        <label string="${id_empresa}" colspan="3" xalign="0.0" xexpand="1" id="id_empresa"/>
+        <label string="Id Sucursal:" id="label_idsucursal"/>
+        <label string="${id_sucursal}" colspan="3" xalign="0.0" xexpand="1" id="id_sucursal"/>
+        <label string="Grupo Comprobante:" id="label_gcbte"/>
+        <label string="${grupo_cbte}" colspan="3" xalign="0.0" xexpand="1" id="gcbte"/>
+        <group string="Datos para secuencia de Facturacion" id="gcbte" colspan="4">
+            <label string="EmpresaID" id="label_empresaTemplate"/>
+            <field name="idempresa"/>
+            <label string="SucursalID" id="label_sucursalTemplate"/>
+            <field name="idsucursal"/>
+            <label string="Grupo_Comprobante" id="label_gcbteTemplate"/>
+            <field name="grupocbte"/>
+        </group>
+    </xpath>
+</data>

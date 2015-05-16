@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tryton>
+    <data>
+    	        <!--para desactivar los menus de los modulos originarios de tryton-->
+        <!--<record model="ir.ui.menu" id="party.menu_party">
+            <field name="active" eval="False"/>
+        </record>-->
+
+        <!--para desactivar los menus de los modulos originarios de tryton-->
+
+        <!--para desactivar los menus de los modulos originarios de tryton-->
+        <record model="ir.ui.menu" id="product.menu_main_product">
+            <field name="active" eval="False"/>
+        </record>
+
+        <record model="ir.ui.menu" id="product_price_list.menu_price_list">
+            <field name="active" eval="False"/>
+        </record>
+        
+        <record model="ir.ui.view" id="secuencia_view_form">
+            <field name="model">ir.sequence</field>
+            <field name="inherit" ref="ir.sequence_view_form"/>
+            <field name="name">sequence_form</field>
+        </record>
+    </data>
+</tryton>

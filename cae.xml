@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<tryton>
+    <data>
+        
+        <record model="ir.ui.view" id="cae_view_form">
+            <field name="model">cooperar_secuencia_factura.cae</field>
+            <field name="type">form</field>
+            <field name="name">cae_form</field>
+        </record>
+
+        <record model="ir.ui.view" id="cae_view_tree">
+            <field name="model">cooperar_secuencia_factura.cae</field>
+            <field name="type">tree</field>
+            <field name="name">cae_tree</field>
+        </record>
+
+        <record model="ir.action.act_window" id="act_cae">
+            <field name="name">CAE</field>
+            <field name="res_model">cooperar_secuencia_factura.cae</field>
+        </record>
+
+        <menuitem name="C.A.E." parent="account.menu_account_configuration"
+            id="menu_cae" action="act_cae"/>
+    </data>
+</tryton>
