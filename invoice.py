@@ -47,6 +47,12 @@ class Invoice:
         domain=([('pos', '=', Eval('pos'))]),
         states=_POS_STATES, depends=_DEPENDS)
     
+    #Que se vea solo si es factura proveedor
+    #invoice_type_proveedor = fields.Many2One('account.pos.sequence', 'Tipo de Factura',
+    #    domain=([('pos', '=', Eval('pos'))]),
+    #    states=_POS_STATES, depends=_DEPENDS)
+
+
     @classmethod
     def __setup__(cls):
         super(Invoice, cls).__setup__()
