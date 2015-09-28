@@ -115,7 +115,6 @@ class Invoice:
         return invoice_type
 
     def on_change_pos(self):
-        import pudb;pu.db
         
         PosSequence = Pool().get('account.pos.sequence')
         if not self.pos:
